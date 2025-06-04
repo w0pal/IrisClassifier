@@ -49,7 +49,7 @@ if st.button("Deteksi"):
     else:
         input_vec = vectorizer.transform([user_input])
         pred = model.predict(input_vec)[0]
-        proba = model.predict_proba(input_vec)[0]
+        proba = model``.predict_proba(input_vec)[0]
 
         label = "🚫 Spam" if pred == 1 else "✅ Bukan Spam"
         st.success(f"Hasil Deteksi: {label}")
